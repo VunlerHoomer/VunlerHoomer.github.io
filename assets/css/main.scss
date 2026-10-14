@@ -164,6 +164,24 @@ button:focus-visible {
 .bio-block {
   padding-top: 7px;
 }
+.profile-photo {
+  float: right;
+  width: 164px;
+  height: auto;
+  margin: 0 0 22px 26px;
+  border-radius: 4px;
+}
+.bio-block .bio-note {
+  clear: both;
+  padding-top: 8px;
+}
+@media (max-width: 575px) {
+  .profile-photo {
+    width: 128px;
+    max-width: 40%;
+    margin-left: 20px;
+  }
+}
 .bio-block h2,
 .home-sections h2 {
   font-size: 32px;

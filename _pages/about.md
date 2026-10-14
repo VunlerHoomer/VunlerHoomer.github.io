@@ -11,6 +11,7 @@ permalink: /
       <p class="chinese-name" lang="zh">施承轩</p>
     </div>
     <div class="bio-block">
+      <img class="profile-photo" src="{{ '/assets/img/chengxuan-shi.jpg' | relative_url }}" alt="Chengxuan Shi · 施承轩" width="1279" height="1550" fetchpriority="high">
       <h2>About</h2>
       <p>I’m Chengxuan Shi at Xi’an Jiaotong-Liverpool University.</p>
       <p lang="zh">西交利物浦大学</p>

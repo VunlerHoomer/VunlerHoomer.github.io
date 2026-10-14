@@ -8,7 +8,7 @@
 - 学校：Xi’an Jiaotong-Liverpool University / 西交利物浦大学
 - GitHub 用户名：VunlerHoomer（显示名为 Stellar）
 - 目标网址：https://vunlerhoomer.github.io
-- 研究方向、邮箱、头像、学位、时间、论文和项目尚未提供；没有编造这些信息。
+- 研究方向、邮箱、学位、时间、论文和项目尚未提供；没有编造这些信息。
 
 ## 日常更新
 
@@ -33,7 +33,7 @@
 
 浏览器预览会清除脚本与危险链接；导出保留原始 Markdown。数学公式和 Liquid 等 Jekyll 特性以最终构建结果为准。日期限制为今天及以前，避免文章因未来日期而暂不显示。
 论文和项目为空时显示简洁的空状态；填写真实内容后会自动展示。
-研究方向暂未添加。获得真实头像后，可按 `docs/CUSTOMIZE.md` 添加 al-folio profile 配置，并移除首页姓名缩写块。
+研究方向暂未添加。首页照片位于 `assets/img/chengxuan-shi.jpg`，按原图比例显示；替换该文件即可更新照片。
 
 ## 本地预览
 
