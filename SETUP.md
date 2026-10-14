@@ -23,7 +23,15 @@
 | 博客文章             | `_posts/YYYY-MM-DD-title.md`      |
 | 色彩、间距、字体     | `assets/css/main.scss`            |
 
-博客入口暂时隐藏；有文章后将 `_pages/blog.md` 中的 `nav` 改为 `true`。
+博客入口已显示。进入 `/blog/`，点击 **Write a post**：
+
+1. 填写标题、日期、标签，用 Markdown 写正文；右侧实时预览。
+2. 草稿仅保存在当前浏览器，不会自动同步到其他设备。可点击 **Download Markdown** 备份。
+3. 点击 **Continue to GitHub**，登录 VunlerHoomer 账户，检查预填的文件并点击 **Commit changes**。提交后自动部署。
+4. 长文章自动下载 Markdown，再点击 **Upload Markdown on GitHub** 上传到 `_posts` 并提交。
+5. 完成发布后返回编辑页，点击 **New draft**，在页面内确认后开始下一篇。
+
+浏览器预览会清除脚本与危险链接；导出保留原始 Markdown。数学公式和 Liquid 等 Jekyll 特性以最终构建结果为准。日期限制为今天及以前，避免文章因未来日期而暂不显示。
 论文和项目为空时显示简洁的空状态；填写真实内容后会自动展示。
 研究方向暂未添加。获得真实头像后，可按 `docs/CUSTOMIZE.md` 添加 al-folio profile 配置，并移除首页姓名缩写块。
 
@@ -46,7 +54,7 @@ GitHub 仓库应为 `VunlerHoomer/VunlerHoomer.github.io`。本项目沿用 al-f
 
 ## 维护与升级
 
-主题通过 Gemfile 和 Gemfile.lock 固定版本。唯一的主题文件覆盖是 `assets/css/main.scss`，保留原来的导入，再追加本站样式；`.al-folio-overrides.yml` 记录了上游基线。
+主题通过 Gemfile 和 Gemfile.lock 固定版本。主题文件覆盖包括 `assets/css/main.scss`、`_includes/header.liquid`、`_includes/footer.liquid`，用于白色与克莱因蓝风格、统一导航和简洁页脚；`.al-folio-overrides.yml` 记录了上游基线。
 
 升级主题后运行：
 
@@ -60,3 +68,11 @@ bundle exec jekyll build
 需要在文章中嵌入 Jupyter 笔记本时，再安装 nbconvert；当前页面不依赖它。
 
 al-folio 使用 MIT 许可证，原始 LICENSE 已保留。
+
+## 设计与前端资源
+
+已安装并使用 Anthropic 官方 frontend-design skill：
+https://github.com/anthropics/skills/tree/main/skills/frontend-design
+
+配色为纯白 `#FFFFFF` 和克莱因蓝 `#002FA7`。Manrope 字体随站点托管，许可证在 `assets/fonts/OFL.txt`。
+编辑器使用固定版本的 marked 和 DOMPurify，分发文件及许可证位于 `assets/vendor/`，依赖版本记录在 package.json 与 package-lock.json。

@@ -55,7 +55,7 @@ search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
-max_width: 1040px
+max_width: 1296px
 serve_og_meta: true
 serve_schema_org: true
 og_image: null
@@ -68,8 +68,8 @@ analytics:
 enable_simple_analytics: false
 google_site_verification: null
 bing_site_verification: null
-blog_name: Notes
-blog_description: Research notes and ideas.
+blog_name: Blog
+blog_description: Notes on learning, research, and ideas in progress.
 permalink: /blog/:year/:title/
 lsi: false
 pagination:

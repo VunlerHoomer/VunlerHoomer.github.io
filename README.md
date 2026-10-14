@@ -2,7 +2,7 @@
 
 Personal academic website for Chengxuan Shi at Xi’an Jiaotong-Liverpool University.
 
-Built with [al-folio](https://github.com/alshedivat/al-folio), with a restrained green palette, light/dark modes, responsive layouts, publications, projects, and CV. Blog infrastructure is retained with its navigation entry hidden until content is available.
+Built with [al-folio](https://github.com/alshedivat/al-folio), with a white and International Klein Blue palette, light/dark modes, responsive layouts, publications, projects, and CV. The Blog navigation includes a Markdown editor with live preview, local draft recovery, export, and GitHub publishing handoff.
 
 - Website: https://vunlerhoomer.github.io
 - [Setup and content maintenance (中文)](SETUP.md)
