@@ -48,9 +48,9 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 
 ## 发布
 
-GitHub 仓库应为 `VunlerHoomer/VunlerHoomer.github.io`。本项目沿用 al-folio 的 `Deploy site` workflow：提交 `main` 后构建并把静态网站写入 `gh-pages` 分支。
+GitHub 仓库应为 `VunlerHoomer/VunlerHoomer.github.io`。本项目通过 `Deploy site` workflow 直接部署：提交 `main` 后构建、检查必须的页面和资源，再由 GitHub 官方 Pages Actions 上传和发布。并发控制确保新的发布取代旧的排队任务。
 
-仓库 Settings → Actions → General 中允许工作流读写仓库；Settings → Pages 中选择 Deploy from a branch、`gh-pages`、`/(root)`。
+仓库 Settings → Pages → Build and deployment → Source 设置为 **GitHub Actions**。发布任务通过 `pages: write` 和 `id-token: write` 授权；不再通过 `gh-pages` 分支触发第二次构建。
 
 ## 维护与升级
 
